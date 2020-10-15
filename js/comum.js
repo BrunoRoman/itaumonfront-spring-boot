@@ -3,7 +3,7 @@ function carregarusuario() {
     var usuariologado = localStorage.getItem("logado");
 
     if (usuariologado == null) {
-        window.location = "index.html";
+        window.location = "/";
     }
 
     var usuariojson = JSON.parse(usuariologado);
@@ -18,6 +18,6 @@ function carregarusuario() {
 }
 function logout() {
     localStorage.clear();
-    window.location = "index.html";
+    window.location = "/";
 }
 
